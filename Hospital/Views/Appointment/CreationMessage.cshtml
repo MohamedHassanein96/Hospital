@@ -1,0 +1,34 @@
+﻿<div class="row">
+    <div class="col-9 mb-3">
+        <h2>Appointment Completed</h2>
+        <h3>Your appointment has been successfully completed</h3>
+    </div>
+    
+</div>
+
+<div class="row">
+    <table class="table table-hover">
+        <thead>
+            <tr>
+                <th scope="col">Patient Name</th>
+                <th scope="col">Appointment Time</th>
+                <th scope="col">Appointment Date</th>
+            </tr>
+        </thead>
+        <tbody>
+
+           
+            
+                <tr class="table-light" ,>
+                <td>@Model.PatientName</td>
+                <td>@Model.AppointmentDate.ToString("yyyy-MM-dd")</td>
+                <td>@Model.AppointmentTime.ToString("hh\\:mm")</td>
+                </tr>
+            
+
+
+        </tbody>
+    </table>
+</div>
+
+<a class="btn bsb-btn-5xl btn-dark rounded-pill px-5 fs-6 m-0" href="/Home" role="button">Back to Home</a>

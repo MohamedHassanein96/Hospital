@@ -1,0 +1,26 @@
+﻿<div class="row">
+
+    <div class="col-12 mb-3">
+        <h2><a href="#"><i class="bi bi-arrow-left"></i></a> Create New Appointment With @Model.Name</h2>
+    </div>
+   
+</div>
+
+<div class="row">
+    <form action="/Appointment/SaveNew/"  id="appointmentForm">
+        <div class="mb-3">
+            <label for="patientName" class="form-label">Patient Name</label>
+            <input type="text" class="form-control" id="patientName" name="PatientName" required>
+        </div>
+        <div class="mb-3">
+            <label for="appointmentDate" class="form-label">Appointment Date</label>
+            <input type="date" class="form-control" id="appointmentDate" name="AppointmentDate" required>
+        </div>
+        <div class="mb-3">
+            <label for="appointmentTime" class="form-label">Appointment Time</label>
+            <input type="time" class="form-control" id="appointmentTime" name="AppointmentTime" required>
+        </div>
+        <button type="submit" class="btn btn-primary">Complete Appointment</button>
+    </form>
+</div>
+
